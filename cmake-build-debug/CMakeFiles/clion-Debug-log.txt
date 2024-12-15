@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /home/arcsenius/CLionProjects/OS_Labs Select CMakeLists.txt
