@@ -1,0 +1,13 @@
+.vscode/
+
+*.log
+*.tmp
+
+.DS_Store
+Thumbs.db
+
+*.out
+
+cmake-build-debug/
+
+.idea/
