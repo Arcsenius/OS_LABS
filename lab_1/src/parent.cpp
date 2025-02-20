@@ -53,11 +53,11 @@ if (pid == -1){
 
     code = kE_EXECL_ERROR;
 } else {
- close(pipe_fd[1]);
+    close(pipe_fd[1]);
 
-        char buffer[256];
-        ssize_t bytesRead;
-        while ((bytesRead = read(pipe_fd[0], buffer, sizeof(buffer) - 1)) > 0) {
+    char buffer[256];
+    ssize_t bytesRead;
+    while ((bytesRead = read(pipe_fd[0], buffer, sizeof(buffer) - 1)) > 0) {
             buffer[bytesRead] = '\0';
             write(STDOUT_FILENO, buffer, bytesRead);
         }
