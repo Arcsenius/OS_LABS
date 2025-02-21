@@ -57,7 +57,7 @@ void write_to_file(int arr[], int n, const char *filename) {
         exit(1);
     }
    
-    fprintf(file, "Result: ");
+    // fprintf(file, "Result: ");
     for (int i = 0; i < n; i++) {
         fprintf(file, "%d ", arr[i]);
     }
